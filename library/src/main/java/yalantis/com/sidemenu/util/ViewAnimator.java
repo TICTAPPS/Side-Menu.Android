@@ -1,5 +1,6 @@
 package yalantis.com.sidemenu.util;
 
+import android.app.Activity;
 import android.os.Handler;
 import android.support.v4.widget.DrawerLayout;
 import android.view.View;
@@ -30,7 +31,7 @@ public class ViewAnimator<T extends Resourceble> {
     private DrawerLayout drawerLayout;
     private ViewAnimatorListener animatorListener;
 
-    public ViewAnimator(Activity activity, List<T> items,ScreenShotable screenShotable, final DrawerLayout drawerLayout, ViewAnimatorListener animatorListener){
+    public ViewAnimator(Activity activity, List<T> items, ScreenShotable screenShotable, final DrawerLayout drawerLayout, ViewAnimatorListener animatorListener){
         this.activity = activity;
         this.list = items;
         this.screenShotable = screenShotable;
